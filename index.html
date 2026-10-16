@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sweet Seventeen — Ayinn</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button id="music">♪ musik: mati</button>
+<canvas id="cv"></canvas>
+<div id="bg"></div>
+
+<section id="hero">
+  <span class="star" style="top:14%;left:12%">✦</span><span class="star" style="top:22%;right:14%;animation-delay:1s">✧</span><span class="star" style="bottom:20%;left:20%;animation-delay:2s">✦</span>
+  <div class="tag">Sweet Seventeen</div>
+  <h1 style="font-size:clamp(30px,8vw,56px);margin:0">Happy Birthday, <i id="nm">Ayinn</i></h1>
+  <div id="age">0</div>
+  <p>Ada halaman kecil yang dibuat khusus buat hari spesial kamu. Pelan-pelan aja bukanya ya.</p>
+  <div class="hint">SCROLL YA ↓</div>
+</section>
+
+<section>
+  <div class="tag rv">chapter 01</div>
+  <h2 class="rv">Tujuh belas tahun</h2>
+  <p class="rv">Tujuh belas kali matahari terbit di tanggal yang sama. Tujuh belas kali kamu tumbuh, belajar, jatuh, lalu bangun lagi. Dan hari ini, semuanya layak dirayain.</p>
+  <p class="rv" style="color:var(--soft)">Karena kamu bukan cuma bertambah umur, kamu bertambah hebat.</p>
+</section>
+
+<section>
+  <div class="tag rv">galeri</div>
+  <h2 class="rv">momen yang ke-capture</h2>
+  <p class="rv" style="color:var(--soft);margin-top:0">(tap kotak foto untuk memilih foto dari galeri HP)</p>
+  <div class="gal rv" id="gal"></div>
+</section>
+
+<section>
+  <div class="tag rv">chapter 02</div>
+  <h2 class="rv">17 doa untuk umur 17</h2>
+  <div class="doa rv" id="doa"><small id="dn"></small><p id="dt"></p></div>
+  <div class="bar rv"><i id="db"></i></div>
+  <button class="btn rv" id="dnext">doa berikutnya →</button>
+</section>
+
+<section>
+  <div class="tag rv">chapter 03</div>
+  <h2 class="rv">Make a wish ✨</h2>
+  <p class="rv" style="margin-top:0">Pejamkan mata, bisikkan satu harapan, lalu tiup lilinnya.</p>
+  <svg id="cake" viewBox="0 0 300 300" class="rv">
+    <ellipse cx="150" cy="282" rx="130" ry="12" fill="#000" opacity=".1"/>
+    <rect x="40" y="190" width="220" height="85" rx="14" fill="#ffb3d1"/>
+    <rect x="62" y="125" width="176" height="70" rx="14" fill="#fff0f6"/>
+    <path d="M40 200q18 22 36 0t36 0 36 0 36 0 36 0 36 0v-10H40z" fill="#fff"/>
+    <path d="M62 135q15 20 29 0t29 0 29 0 29 0 29 0v-10H62z" fill="#ff7eb0"/>
+    <circle cx="80" cy="238" r="6" fill="#c9a7ff"/><circle cx="150" cy="244" r="6" fill="#fff"/><circle cx="220" cy="238" r="6" fill="#c9a7ff"/>
+    <rect x="108" y="62" width="30" height="64" rx="6" fill="#c9a7ff"/><text x="123" y="108" text-anchor="middle" font-size="30" font-weight="700" fill="#fff" font-family="Georgia">1</text>
+    <rect x="162" y="62" width="30" height="64" rx="6" fill="#ff7eb0"/><text x="177" y="108" text-anchor="middle" font-size="30" font-weight="700" fill="#fff" font-family="Georgia">7</text>
+    <g class="fl"><path d="M123 58c-12-14-4-26 0-34 4 8 12 20 0 34z" fill="#ffc94d"/></g>
+    <g class="fl" style="animation-delay:.15s"><path d="M177 58c-12-14-4-26 0-34 4 8 12 20 0 34z" fill="#ffc94d"/></g>
+    <g id="smoke" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round"><path d="M123 50q-8-10 0-20"/><path d="M177 50q8-10 0-20"/></g>
+  </svg>
+  <div id="cap" class="rv">tap kuenya, atau tekan tombol di bawah</div>
+  <button class="btn rv" id="blow">🎂 tiup lilin</button>
+</section>
+
+<section>
+  <div class="tag rv">chapter 04</div>
+  <h2 class="rv">Ada surat buat kamu</h2>
+  <p class="rv" id="lhint" style="margin-top:0;color:var(--soft)">tiup lilin dulu ya, baru suratnya terbuka 💌</p>
+  <div class="env rv" id="env">
+    <div class="back"></div>
+    <div class="paper" id="paper"></div>
+    <div class="front"></div><div class="flap"></div>
+  </div>
+</section>
+
+<section style="min-height:70vh">
+  <h2 class="rv">Selamat ulang tahun, <i id="nm2">Ayinn</i> 🎀</h2>
+  <p class="rv">Semoga 17 jadi tahun paling seru. Terima kasih sudah jadi kamu.</p>
+  <button class="btn rv" id="again">🎉 hujan konfeti lagi</button>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
